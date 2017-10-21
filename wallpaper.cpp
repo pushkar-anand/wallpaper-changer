@@ -10,7 +10,7 @@ int main()
 	int no_of_wallpapers;
 	int time_interval = 5; //time in minutes
 
-	string wallpaperDIR = "/home/fussu/Desktop/Wallpapers"; //the directory where wallpapers are stored
+	string wallpaperDIR = "XXXXXXXXX/Wallpapers"; //the directory where wallpapers are stored
 
 	for (auto & p : experimental::filesystem::directory_iterator(wallpaperDIR))
 	{
