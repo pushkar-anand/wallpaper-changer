@@ -8,7 +8,7 @@ int main()
 {
 	vector<experimental::filesystem::directory_entry> pics;
 	int no_of_wallpapers;
-	int time_interval = 3; //time in minutes
+	int time_interval = 2; //time in minutes
 
 	string wallpaperDIR = "/home/pushkar/Wallpapers"; //the directory where wallpapers are stored
 
