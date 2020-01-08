@@ -8,9 +8,9 @@ int main()
 {
 	vector<experimental::filesystem::directory_entry> pics;
 	int no_of_wallpapers;
-	int time_interval = 5; //time in minutes
+	int time_interval = 3; //time in minutes
 
-	string wallpaperDIR = "XXXXXXXXX/Wallpapers"; //the directory where wallpapers are stored
+	string wallpaperDIR = "/home/pushkar/Wallpapers"; //the directory where wallpapers are stored
 
 	for (auto & p : experimental::filesystem::directory_iterator(wallpaperDIR))
 	{
@@ -18,6 +18,10 @@ int main()
 	}
 	
 	no_of_wallpapers = pics.size();
+	
+	// random selection of wallpaper
+	output = 0 + (rand() % static_cast<int>(no_of_wallpapers - 0 + 1))
+	
 	string fileSTRING = pics[wallpaper_count_start].path().string();
 	
 	string cmd = "gsettings set org.gnome.desktop.background picture-uri \""+ fileSTRING +"\"";
