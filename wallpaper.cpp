@@ -20,7 +20,7 @@ int main()
 	no_of_wallpapers = pics.size();
 	
 	// random selection of wallpaper
-	output = 0 + (rand() % static_cast<int>(no_of_wallpapers - 0 + 1))
+	wallpaper_count_start = 0 + (rand() % static_cast<int>(no_of_wallpapers - 0 + 1));
 	
 	string fileSTRING = pics[wallpaper_count_start].path().string();
 	
